@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilizando.css">
+    <script src="https://kit.fontawesome.com/a6337152f3.js" crossorigin="anonymous"></script>
+    <title>Larissa Weiber</title>
+    
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="LOGO.jpg" alt="logo larissa">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/larissa">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:larissa_weiber@hotmail.com"> e-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/067981145414">Telefone</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="conteiner">
+            <div class="name">
+                <h1>Larissa Weiber</h1>
+                <h5>Fullstack Developer</h5>
+             </div
+             ><div onclick="displayAbout()" id="arrow">
+                 
+                <i id="animation" class="fa-solid fa-arrow-down-long"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p> Sobre mim .....</p>
+            </div>
+            <div class="form">
+                <div>
+                    <p> Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="digite seu email">
+                    <button> Enviar</button>
+
+
+                </form>
+                
+
+            </div>
+           
+        </section>
+
+    </main>
+<script>
+    function displayAbout(){
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+       var display = document.getElementById('about');
+        display.classList.toggle('active');
+
+
+    }
+</script>
+
+</body>
+
+</html>
